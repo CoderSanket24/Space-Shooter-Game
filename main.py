@@ -6,7 +6,7 @@ from game2 import play2
 from selectionScreen1 import selection_screen
 from selectionScreen2 import selection_screen2
 
-#initializes pygame module
+#initialize pygame modules
 pygame.init()
 
 # Screen dimensions
@@ -47,7 +47,7 @@ def main():
                 SUHANI_RECT = SUHANI_TEXT.get_rect(center=(1100,550))
                 screen.blit(SUHANI_TEXT,SUHANI_RECT)
 
-                CHAITANYA_TEXT = get_font(30).render("Chaitanya Kulkarni 69)", True, "#b68f40")
+                CHAITANYA_TEXT = get_font(30).render("Chaitanya Kulkarni (69)", True, "#b68f40")
                 CHAITANYA_RECT = CHAITANYA_TEXT.get_rect(center=(1100,600))
                 screen.blit(CHAITANYA_TEXT,CHAITANYA_RECT)
 
@@ -66,7 +66,7 @@ def main():
                                         text_input="QUIT", font=get_font(75), base_color="#d7fcd4", hovering_color="Red")
 
                 screen.blit(MENU_TEXT, MENU_RECT)
-                
+
                 for button in [SINGLEPLAYER_BUTTON, MULTIPLAYER_BUTTON, QUIT_BUTTON, HELP_BUTTON]:
                         button.changeColor(Menu_Mouse_Pos)
                         button.update(screen)

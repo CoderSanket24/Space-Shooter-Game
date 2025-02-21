@@ -12,16 +12,15 @@ This is a 2D Space Shooter game built using Python and Pygame. The game involves
 ```
 main_project/
 │
-├── cls.py
-├── fns.py
-├── game.py
-├── game2.py
+├── classes.py
+├── functions.py
 ├── main.py
-├── raw.py
-├── scoreGame1.py
-├── scoreGame2.py
 ├── selectionScreen1.py
+├── game.py
+├── scoreGame1.py
 ├── selectionScreen2.py
+├── game2.py
+├── scoreGame2.py
 │
 ├── assesories/
 │   ├── Images (spaceships, background, asteroids, etc.)

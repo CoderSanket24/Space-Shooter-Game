@@ -1,11 +1,14 @@
 import pygame, sys
-from selectionScreen1 import selection_screen
-from selectionScreen2 import selection_screen2
-from game import play1
-from game2 import play2
 from functions import get_font,draw_gradient_background,Help
 from classes import Button
+from game import play1
+from game2 import play2
+from selectionScreen1 import selection_screen
+from selectionScreen2 import selection_screen2
+
+#initializes pygame module
 pygame.init()
+
 # Screen dimensions
 WIDTH, HEIGHT = 1280, 720
 screen = pygame.display.set_mode((WIDTH, HEIGHT))

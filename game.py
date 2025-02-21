@@ -23,7 +23,8 @@ Bullet_fire = mixer.Sound('assesories/laser.wav')
 backgrounds = [
     pygame.image.load('assesories/bg.jpg'),
     pygame.image.load('assesories/bg2.jpg'),
-    pygame.image.load('assesories/bg3.jpg')
+    pygame.image.load('assesories/bg3.jpg'),
+    pygame.image.load('assesories/bg4.jpg')
 ]
 
 def play1(spaceship_image, asteroid_image):
@@ -60,7 +61,6 @@ def play1(spaceship_image, asteroid_image):
         #game loop
         while game_active:
             clock.tick(30)
-
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()

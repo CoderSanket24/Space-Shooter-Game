@@ -33,28 +33,12 @@ def main():
                 screen.blit(MENU_TEXT, MENU_RECT)
 
                 MADE_BY_TEXT = get_font(30).render("Made By:", True, "#28b463")
-                MADE_BY_RECT = MADE_BY_TEXT.get_rect(center=(1100, 400))
+                MADE_BY_RECT = MADE_BY_TEXT.get_rect(center=(1100, 600))
                 screen.blit(MADE_BY_TEXT, MADE_BY_RECT)
 
-                SANKET_TEXT = get_font(30).render("Sanket Botre (66)", True, "#b68f40")
-                SANKET_RECT = SANKET_TEXT.get_rect(center=(1100, 450))
+                SANKET_TEXT = get_font(30).render("Sanket Botre", True, "#b68f40")
+                SANKET_RECT = SANKET_TEXT.get_rect(center=(1100, 650))
                 screen.blit(SANKET_TEXT, SANKET_RECT)
-
-                SANIKA_TEXT = get_font(30).render("Sanika Brahmankar (67)", True, "#b68f40")
-                SANIKA_RECT = SANIKA_TEXT.get_rect(center=(1100, 500))
-                screen.blit(SANIKA_TEXT, SANIKA_RECT)
-
-                SUHANI_TEXT = get_font(30).render("Suhani Buche (68)", True, "#b68f40")
-                SUHANI_RECT = SUHANI_TEXT.get_rect(center=(1100,550))
-                screen.blit(SUHANI_TEXT,SUHANI_RECT)
-
-                CHAITANYA_TEXT = get_font(30).render("Chaitanya Kulkarni (69)", True, "#b68f40")
-                CHAITANYA_RECT = CHAITANYA_TEXT.get_rect(center=(1100,600))
-                screen.blit(CHAITANYA_TEXT,CHAITANYA_RECT)
-
-                KRUSHNA_TEXT = get_font(30).render("Krushnamegh Chakke (70)", True, "#b68f40")
-                KRUSHNA_RECT = KRUSHNA_TEXT.get_rect(center=(1100,650))
-                screen.blit(KRUSHNA_TEXT,KRUSHNA_RECT)
 
                 SINGLEPLAYER_BUTTON = Button(image=pygame.image.load("assesories/options Rect.png"), pos=(640, 230),
                                         text_input="SINGLEPLAYER", font=get_font(50), base_color="#d7fcd4", hovering_color="Yellow")

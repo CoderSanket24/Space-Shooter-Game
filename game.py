@@ -109,7 +109,7 @@ def play1(spaceship_image, asteroid_image):
                     if hit_asteroids: 
                         bullet.kill() 
                         player_score += 1
-                        for asteroid in hit_asteroids: 
+                        for _ in hit_asteroids:
                             # Optionally, add some score or explosion effects here 
                             new_asteroid = Asteroid(asteroid_image) 
                             all_sprites.add(new_asteroid) 

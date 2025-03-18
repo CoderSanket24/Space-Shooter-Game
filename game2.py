@@ -25,6 +25,7 @@ def play2(spaceship_image, spaceship2_image, asteroid_image="assesories/asteroid
         pygame.image.load('assesories/bg.jpg'),
         pygame.image.load('assesories/bg2.jpg'),
         pygame.image.load('assesories/bg3.jpg'),
+        pygame.image.load('assesories/bg4.jpg'),
     ]
 
     running = True

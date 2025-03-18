@@ -84,4 +84,4 @@ def selection_screen():
                 elif event.key == pygame.K_RETURN:  # Press Enter to confirm selection
                     return spaceship_images[selected_spaceship], asteroid_images[selected_asteroid]
 
-        pygame.display.update()
+        pygame.display.flip()

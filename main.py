@@ -27,9 +27,10 @@ def main():
                 draw_gradient_background()
 
                 Menu_Mouse_Pos = pygame.mouse.get_pos()
-                
+
                 MENU_TEXT = get_font(100).render("MAIN MENU", True, "#b68f40")
                 MENU_RECT = MENU_TEXT.get_rect(center=(640, 80))
+                screen.blit(MENU_TEXT, MENU_RECT)
 
                 MADE_BY_TEXT = get_font(30).render("Made By:", True, "#28b463")
                 MADE_BY_RECT = MADE_BY_TEXT.get_rect(center=(1100, 400))
@@ -54,18 +55,15 @@ def main():
                 KRUSHNA_TEXT = get_font(30).render("Krushnamegh Chakke (70)", True, "#b68f40")
                 KRUSHNA_RECT = KRUSHNA_TEXT.get_rect(center=(1100,650))
                 screen.blit(KRUSHNA_TEXT,KRUSHNA_RECT)
-                
-                
-                SINGLEPLAYER_BUTTON = Button(image=pygame.image.load("assesories/options Rect.png"), pos=(640, 230), 
-                                        text_input="SINGLEPLAYER", font=get_font(50), base_color="#d7fcd4", hovering_color="Yellow")
-                MULTIPLAYER_BUTTON = Button(image=pygame.image.load("assesories/Options Rect.png"), pos=(640, 350), 
-                                        text_input="MULTIPLAYER", font=get_font(50), base_color="#d7fcd4", hovering_color="Yellow")
-                HELP_BUTTON = Button(image=pygame.image.load("assesories/Quit Rect.png"), pos=(640, 480), 
-                                        text_input="HELP", font=get_font(50), base_color="#d7fcd4", hovering_color="Green")
-                QUIT_BUTTON = Button(image=pygame.image.load("assesories/Quit Rect.png"), pos=(640, 610), 
-                                        text_input="QUIT", font=get_font(75), base_color="#d7fcd4", hovering_color="Red")
 
-                screen.blit(MENU_TEXT, MENU_RECT)
+                SINGLEPLAYER_BUTTON = Button(image=pygame.image.load("assesories/options Rect.png"), pos=(640, 230),
+                                        text_input="SINGLEPLAYER", font=get_font(50), base_color="#d7fcd4", hovering_color="Yellow")
+                MULTIPLAYER_BUTTON = Button(image=pygame.image.load("assesories/Options Rect.png"), pos=(640, 350),
+                                        text_input="MULTIPLAYER", font=get_font(50), base_color="#d7fcd4", hovering_color="Yellow")
+                HELP_BUTTON = Button(image=pygame.image.load("assesories/Quit Rect.png"), pos=(640, 480),
+                                        text_input="HELP", font=get_font(50), base_color="#d7fcd4", hovering_color="Green")
+                QUIT_BUTTON = Button(image=pygame.image.load("assesories/Quit Rect.png"), pos=(640, 610),
+                                        text_input="QUIT", font=get_font(75), base_color="#d7fcd4", hovering_color="Red")
 
                 for button in [SINGLEPLAYER_BUTTON, MULTIPLAYER_BUTTON, QUIT_BUTTON, HELP_BUTTON]:
                         button.changeColor(Menu_Mouse_Pos)
@@ -88,7 +86,7 @@ def main():
                                         pygame.quit()
                                         sys.exit()
                 
-                pygame.display.update()
+                pygame.display.flip()
         pygame.quit()
         sys.exit()
 if __name__ == "__main__":
